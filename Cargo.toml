@@ -10,6 +10,9 @@ path = "src/lib.rs"
 path = "src/main.rs"
 name = "zero2prod"
 
+[lints.clippy]
+needless_return = "allow"
+
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 actix-web = "4"
