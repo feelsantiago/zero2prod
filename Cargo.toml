@@ -3,5 +3,14 @@ name = "zero2prod"
 version = "0.1.0"
 edition = "2024"
 
-[dependencies]
+[lib]
+path = "src/lib.rs"
 
+[[bin]]
+path = "src/main.rs"
+name = "zero2prod"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+actix-web = "4"
+reqwest = "0.12.15"
