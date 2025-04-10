@@ -18,6 +18,7 @@ tokio = { version = "1", features = ["full"] }
 actix-web = "4"
 reqwest = "0.12.15"
 serde = { version = "1.0", features = ["derive"] }
+config = "0.13"
 
 [dependencies.sqlx]
 version = "0.6"
