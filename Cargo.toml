@@ -16,9 +16,9 @@ needless_return = "allow"
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 actix-web = "4"
-reqwest = "0.12.15"
 serde = { version = "1.0", features = ["derive"] }
 serde-aux = "4"
+serde_json ="1"
 config = "0.13"
 uuid = { version = "1", features = ["v4"]}
 chrono = { version = "0.4.22", default-features = false, features = ["clock"] }
@@ -33,6 +33,11 @@ secrecy = { version = "0.8", features = ["serde"]}
 unicode-segmentation = "1"
 claims = "0.7"
 validator = "0.16"
+
+[dependencies.reqwest]
+version = "0.11"
+deault-features = false
+features = ["json", "rustls-tls"]
 
 [dependencies.sqlx]
 version = "0.6"
@@ -51,4 +56,5 @@ features = [
 fake = "~2.3"
 quickcheck = "0.9.2"
 quickcheck_macros = "0.9.1"
+wiremock = "0.5"
 
